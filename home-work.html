@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="left-column">
+                <button class="button">Bài 1</button><br>
+                <button class="button">Bài 2</button><br>
+                <button class="button">Bài 3</button><br>
+                <button class="button">Bài 4</button><br>
+                <button class="button">Bài 5</button><br>
+            </div>
+            <div class="row1">
+                <div class="right-column">
+                    <p class="head-content">❗ 
+                        <b>Đây chỉ là gợi ý nên người làm có thể làm khác gợi ý, miễn đúng theo yêu cầu trong file đề bài</b></p>
+                    </div>
+                    <div class="card-head">
+                        <h4>💰 Tính Tiền Lương Nhân Viên</h4>
+                    </div>
+                    <div class="bai1">
+                        <div class="content-bai1">
+                            <p>💡<b>Gợi ý:</b>
+                                <br>
+                                Công thức: Lương = Lương 1 ngày * số ngày làm
+                                <br>
+                                Kiến thức áp dụng:<br><br>
+                            <ul>
+                                <li>Tìm tới thẻ và lấy giá trị</li>
+                                <li>Tạo hàm cơ bản</li>
+                                <li>Gắn sự kiện click cho button</li>
+                                <li>Thay đổi nội dung cho thẻ</li>
+                                <li>Xử lý load trang với button của form</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>    
+                        <form>
+                            <div class="input">
+                                <input type="number" placeholder="Nhập Lương Một Ngày">
+                                <input type="number" placeholder="Số Ngày Làm"><br>
+                                <input type="Button" class="btn" value="Tính Lương" onclick="tinhluong()"><br>
+                                <input type="text" class="result" id="kq">
+                            </div>
+                            
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var kq=document.getElementById("kq");
+        var input = document.getElementsByTagName("input")
+        function tinhluong(){
+             input[3].value = parseInt (input[0].value) * parseInt (input[1].value);
+            }
+        var button = document.getElementsByClassName('button');
+        var box = document.getElementsByClassName('box');
+        for(var i = 0;i<button.length; i++){
+         button[i].addEventListener('click',show);
+         }
+    </script>
+    <!-- <script>
+        
+        function show(){
+            for(var i = 0;i<area.length; i++){
+            area[i].classList.remove('active');
+        }
+            this.classList.add('active');
+
+            for(var i = 0;i<area.length; i++){
+            box[i].classList.remove('show');
+        }
+        box[this.id-1].classList.add('show');
+        }
+    </script> -->
+</body>
+</html>
