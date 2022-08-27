@@ -19,7 +19,7 @@ body {
     margin-left: 40px;
 }
 .row{
-    background: aqua;
+    background: white;
     width: 80%;
     display: flex;
 }
