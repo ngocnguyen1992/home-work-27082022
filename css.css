@@ -19,13 +19,13 @@ body {
     margin-left: 40px;
 }
 .row{
-    background: white;
+    background: rgb(255, 255, 255);
     width: 80%;
     display: flex;
 }
 .left-column{
     box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07);
-    background-color: #ecf0f3;
+    background-color: #f2f4f5;
     color: #a0a5a8;
     width: 20%;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@ body {
     border-radius: 5px;
     font-size: 20px;
     background: #fff;
-    box-shadow: -3px -3px 7px #fff, 3px 3px 5px #ceced1;
+    box-shadow: 3px 3px 5px #ceced1;
     border-left-color: #5bc0de
 }
 .bai1 .content-bai1 b{
@@ -109,7 +109,7 @@ form .input .btn{
 form .input .result {
     width: 90%;
     height: 50px;
-    background: #dde0e3;
+    background: #f1f1f1;
 }
 form .input .btn:hover{
     color: #f9f9f9;
